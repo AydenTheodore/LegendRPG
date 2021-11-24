@@ -1,15 +1,18 @@
 {
-  "name": "rpg",
-  "version": "1.0.0",
-  "description": "This template provides an easy way to use NodeJS v16 on Replit! As of writing, NodeJS repls have Node v12, which is several years out of date.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "discord.js": "^13.3.1"
-  }
+	"name": "TheLegendRPG",
+	"version": "1.0.0",
+	"description": "The Legendary RPG! Try /start at the Discord server!",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js"
+	},
+	"keywords": [],
+	"author": "Ayden Fox",
+	"license": "ISC",
+	"dependencies": {
+		"@discordjs/builders": "^0.8.2",
+		"@discordjs/rest": "^0.1.0-canary.0",
+		"discord-api-types": "^0.24.0",
+		"discord.js": "^13.3.1"
+	}
 }

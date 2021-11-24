@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const fs = require('fs');
-const { usersFile, prefixes, halloween, christmas } = require('./config.json');
+const { usersFile } = require('./config.json');
 
-const client = new Discord.Client();
+const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS] });
 client.commands = new Discord.Collection();
 client.cooldowns = new Discord.Collection();
 
@@ -72,7 +72,8 @@ function random(min, max) {
 	return Math.floor(Math.random() * (max - min) + min);
 }
 
-client.on('message', message => {
+/*
+client.on('interactionCreate', message => {
 	if (message.content.includes(process.env.TOKEN) || message.content.includes('--tokenwarn')) {
 		message.delete();
 		if (!message.author.bot) message.author.send("Hey, você não pode ficar vazando meu TOKEN por aí!");
@@ -226,11 +227,27 @@ client.on('message', message => {
 		message.reply(`**ERROR 502** - \`Bad Gateway\`\n\n\`\`\`\n${error}\`\`\``);
 	}
 });
+*/
+
+client.on('interactionCreate', async interaction => {
+	if (!interaction.isCommand()) return;
+
+	const command = client.commands.get(interaction.commandName);
+
+	if (!command) return;
+
+	try {
+		await command.execute(interaction);
+	} catch (error) {
+		console.error(error);
+		await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+	}
+});
 
 const http = require('http');
 const server = http.createServer((req, res) => {
 	res.writeHead(200);
-	res.end('Legendary being made of every RPG in the surface.');
+	res.end('Up and running!');
 });
 
 server.listen(3000);
