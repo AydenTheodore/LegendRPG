@@ -1,0 +1,113 @@
+{
+	"flamni": {
+		"name": "flamni",
+		"description": "Hot and destructive",
+		"icon": "🔥",
+		"nemesis": [
+			"aqua",
+			"electro"
+		],
+		"defaultDebuff": {
+			"name": "Em Chamas",
+			"dmg": 5,
+			"ticks": 3
+		}
+	},
+	"aqua": {
+		"name": "aqua",
+		"description": "Calm and simple",
+		"icon": "💧",
+		"nemesis": [
+			"terra",
+			"soul"
+		],
+		"defaultDebuff": {
+			"name": "Congeladx",
+			"dmg": 7,
+			"ticks": 5
+		}
+	},
+	"terra": {
+		"name": "terra",
+		"description": "Hard but slow",
+		"icon": "🗻",
+		"nemesis": [
+			"aire",
+			"chaos"
+		],
+		"defaultDebuff": {
+			"name": "Atordoadx",
+			"dmg": 10,
+			"ticks": 2
+		}
+	},
+	"aire": {
+		"name": "aire",
+		"description": "The only one capable of hitting the Unknown.",
+		"icon": "💨",
+		"nemesis": [
+			"flamni",
+			"soul"
+		],
+		"defaultDebuff": {
+			"name": "Sem Fôlego",
+			"dmg": 15,
+			"ticks": 3
+		}
+	},
+	"electro": {
+		"name": "electro",
+		"description": "Multi-target",
+		"icon": "⚡",
+		"nemesis": [
+			"aqua",
+			"terra"
+		],
+		"defaultDebuff": {
+			"name": "Eletrocutadx",
+			"dmg": 40,
+			"ticks": 4
+		}
+	},
+	"soul": {
+		"name": "soul",
+		"description": "The Power of Life.",
+		"icon": "❤️",
+		"nemesis": [
+			"flamni",
+			"void"
+		],
+		"defaultDebuff": {
+			"name": "Drenadx",
+			"dmg": 30,
+			"ticks": 10
+		}
+	},
+	"chaos": {
+		"name": "chaos",
+		"description": "Corrupt and evil",
+		"icon": "💥",
+		"nemesis": [
+			"electro",
+			"void"
+		],
+		"defaultDebuff": {
+			"name": "Em CAOS",
+			"dmg": 50,
+			"ticks": 7
+		}
+	},
+	"void": {
+		"name": "void",
+		"description": "The Unknown, the Unreal, the VOID.",
+		"icon": "⚫",
+		"nemesis": [
+			"aire"
+		],
+		"defaultDebuff": {
+			"name": "Corrompidx",
+			"dmg": 5,
+			"ticks": 3
+		}
+	}
+}

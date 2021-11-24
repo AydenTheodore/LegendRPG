@@ -1,0 +1,25 @@
+{
+	"1": {
+		"name": "Rato",
+		"hp": 150,
+		"maxHP": 150,
+		"atk": 20,
+		"def": 10,
+		"exp": 25,
+		"coins": 100,
+		"icon": "https://media.discordapp.net/attachments/910912693425299517/910913263741587496/Ratinho_OwO1.png",
+		"element": "terra",
+		"drops":[
+			[
+				{
+					"name": "Queijo Podre",
+					"count": [1, 3]
+				},
+				10
+			]
+		],
+		"minLevel": 1,
+		"maxLevel": 3,
+		"description": "Eternamente em busca de queijo (ou o que der), é altamente protetivo e pode atacar invasores de seu ninho."
+	}
+}

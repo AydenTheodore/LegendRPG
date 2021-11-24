@@ -1,0 +1,12 @@
+{
+	"prefixes": [
+		"run",
+		">",
+		"="
+	],
+	"money": "💵",
+	"usersFile": "rpg.json",
+	"usersCashFile": "rpg.json",
+	"halloween": false,
+	"christmas": false
+}
